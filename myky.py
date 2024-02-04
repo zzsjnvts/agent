@@ -33,7 +33,7 @@ def get_secure_input(prompt):
 def get_secure_key():
     privacy_key = keyring.get_password("script", "privacy_key")
     if not privacy_key:
-        privacy_key = get_secure_input("enter your access to the underworld token:")
+        privacy_key = getpass.getpass("enter your access to the underworld token:")
         keyring.set_password("script", "privacy_key", privacy_key)
     return privacy_key
 
