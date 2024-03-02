@@ -91,7 +91,7 @@ print(Art2)
 print(Art3)
 print("")
 print("Invalid key will terminate the application.")
-print("Version 1.4")
+print("Version 1.5")
 privacy_key = input("Enter token:")
 
 vlllddattteee(privacy_key)
