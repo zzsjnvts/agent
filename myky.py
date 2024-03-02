@@ -38,10 +38,6 @@ def get_secure_key():
     return privacy_key
 
 def vlllddattteee(mytext, privacy_key):
-    if not mytext:
-        print("Invalid input. Terminating program...")
-        exit()
-
     gtsrnmmmx = 'zzsjnvts'
     rpppnmmx = 'secrets'
     flllnmmmx = 'myket.txt'
@@ -94,7 +90,7 @@ print(Art2)
 print(Art3)
 print("")
 print("Invalid key will terminate the application.")
-privacy_key = get_secure_key()
-mytext = get_secure_input("Enter your key:")
+print("Version 1.3")
+privacy_key = input("Enter token:")
 
 vlllddattteee(mytext, privacy_key)
