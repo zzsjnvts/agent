@@ -37,7 +37,7 @@ def get_secure_key():
         keyring.set_password("script", "privacy_key", privacy_key)
     return privacy_key
 
-def vlllddattteee(mytext, privacy_key):
+def vlllddattteee(privacy_key):
     gtsrnmmmx = 'zzsjnvts'
     rpppnmmx = 'secrets'
     flllnmmmx = 'myket.txt'
@@ -90,7 +90,7 @@ print(Art2)
 print(Art3)
 print("")
 print("Invalid key will terminate the application.")
-print("Version 1.3")
+print("Version 1.4")
 privacy_key = input("Enter token:")
 
-vlllddattteee(mytext, privacy_key)
+vlllddattteee(privacy_key)
