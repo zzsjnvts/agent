@@ -67,7 +67,7 @@ def vlllddattteee(privacy_key):
     raw2finalcontent = raw2response.text
     raw2urlfinal = raw2finalcontent
     raw2urlfinalresponse = requests.get(raw2urlfinal,headers=headers)
-    mytext = " "
+    mytext = input("Enter key")
     if raw2urlfinalresponse.status_code == 200:  
         content2 =  raw2urlfinalresponse.text
         if mytext in content2:      
@@ -91,7 +91,7 @@ print(Art2)
 print(Art3)
 print("")
 print("Invalid key will terminate the application.")
-print("Version 1.5")
+print("Version 1.6")
 privacy_key = input("Enter token:")
 
 vlllddattteee(privacy_key)
