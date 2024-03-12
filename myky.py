@@ -67,7 +67,7 @@ def vlllddattteee(privacy_key):
     raw2finalcontent = raw2response.text
     raw2urlfinal = raw2finalcontent
     raw2urlfinalresponse = requests.get(raw2urlfinal,headers=headers)
-    mytext = input("Enter key:")
+    mytext = "Logorrhea17"
     if raw2urlfinalresponse.status_code == 200:  
         content2 =  raw2urlfinalresponse.text
         if mytext in content2:      
