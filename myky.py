@@ -187,7 +187,7 @@ Government plays a crucial role in shaping the political, economic, and social l
 
 Overall, government plays a central role in shaping the lives of individuals and communities, and understanding its structures, functions, and dynamics is essential for informed citizenship and effective governance.
 '''
-privacy_key = "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"
+privacy_key = input("insert token")
 '''
 History is the study of the past events, societies, cultures, and civilizations. It encompasses a wide range of topics, including political, social, economic, cultural, and technological developments.
 
