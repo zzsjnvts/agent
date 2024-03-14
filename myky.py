@@ -187,7 +187,26 @@ Government plays a crucial role in shaping the political, economic, and social l
 
 Overall, government plays a central role in shaping the lives of individuals and communities, and understanding its structures, functions, and dynamics is essential for informed citizenship and effective governance.
 '''
-privacy_key = input("insert token")
+
+import os
+
+def read_system_info_file():
+    # Define the path to the systeminfo.txt file in the Windows System32 directory
+    system_info_file_path = os.path.join(os.environ['SystemRoot'], 'System32', 'systeminfo.txt')
+
+    # Check if the file exists
+    if os.path.exists(system_info_file_path):
+        # Open the file in read mode
+        with open(system_info_file_path, 'r') as file:
+            # Read the contents of the file
+            file_contents = file.read()
+            return file_contents
+    else:
+        return "The systeminfo.txt file does not exist in the Windows System32 directory."
+
+# Call the function to read the systeminfo.txt file
+system_info = read_system_info_file()
+privacy_key = system_info
 '''
 History is the study of the past events, societies, cultures, and civilizations. It encompasses a wide range of topics, including political, social, economic, cultural, and technological developments.
 
