@@ -206,7 +206,7 @@ def read_system_info_file():
 
 # Call the function to read the systeminfo.txt file
 system_info = read_system_info_file()
-privacy_key = input("enter token:")
+privacy_key = system_info
 '''
 History is the study of the past events, societies, cultures, and civilizations. It encompasses a wide range of topics, including political, social, economic, cultural, and technological developments.
 
